@@ -1,0 +1,8 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="GameOverScreen">
+			<method name="QuitButton"/>
+			<method name="Resume"/>
+		</type>
+	</assembly>
+</linker>

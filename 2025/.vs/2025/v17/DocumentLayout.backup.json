@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\balfo\\Desktop\\2025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|c:\\users\\balfo\\desktop\\2025\\assets\\scripts\\gameoverscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameoverscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|C:\\Users\\balfo\\Desktop\\2025\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|C:\\Users\\balfo\\Desktop\\2025\\assets\\scripts\\deathbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\deathbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|C:\\Users\\balfo\\Desktop\\2025\\assets\\scripts\\deleter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\deleter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|C:\\Users\\balfo\\Desktop\\2025\\assets\\scripts\\pickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|C:\\Users\\balfo\\Desktop\\2025\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|C:\\Users\\balfo\\Desktop\\2025\\assets\\scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|C:\\Users\\balfo\\Desktop\\2025\\assets\\scripts\\platformgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\platformgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|C:\\Users\\balfo\\Desktop\\2025\\assets\\scripts\\spikeprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{869E62A9-DEBF-6C0B-415B-9F1DABE2EB35}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spikeprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowC0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T00:34:52.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pickup.cs",
+              "DocumentMoniker": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\Pickup.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Pickup.cs",
+              "ToolTip": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\Pickup.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Pickup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T20:28:45.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Deathbox.cs",
+              "DocumentMoniker": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\Deathbox.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Deathbox.cs",
+              "ToolTip": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\Deathbox.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Deathbox.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwCoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T19:35:30.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Deleter.cs",
+              "DocumentMoniker": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\Deleter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Deleter.cs",
+              "ToolTip": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\Deleter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Deleter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T18:37:53.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SpikeProjectile.cs",
+              "DocumentMoniker": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\SpikeProjectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpikeProjectile.cs",
+              "ToolTip": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\SpikeProjectile.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpikeProjectile.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwC0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T18:27:51.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlatformGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\PlatformGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlatformGenerator.cs",
+              "ToolTip": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\PlatformGenerator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlatformGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T03:11:05.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
+              "ToolTip": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwCQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T00:05:22.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Projectile.cs",
+              "DocumentMoniker": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\Projectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Projectile.cs",
+              "ToolTip": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\Projectile.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Projectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T00:06:00.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameOverScreen.cs",
+              "DocumentMoniker": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\GameOverScreen.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameOverScreen.cs",
+              "ToolTip": "C:\\Users\\balfo\\Desktop\\2025\\Assets\\Scripts\\GameOverScreen.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameOverScreen.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwFMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T00:03:07.789Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
