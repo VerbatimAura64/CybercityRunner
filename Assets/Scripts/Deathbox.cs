@@ -25,7 +25,7 @@ public class Deathbox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Death" || collision.gameObject.tag == "Enemy")
+       /* if(collision.gameObject.tag == "Death" || collision.gameObject.tag == "Enemy")
         {
             death = true;
             Deactivate();
@@ -33,7 +33,7 @@ public class Deathbox : MonoBehaviour
         } else if (collision.gameObject.tag == "Safe")
         {
             GameOverScreen.UpdatePoints(spikesAvoided);
-        }
+        }*/
 
 
     }

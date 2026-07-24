@@ -29,7 +29,7 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0) && cooldownTimer > attackCooldown && playerMovement.canAttack())
+        if (Input.GetMouseButton(0) && cooldownTimer > attackCooldown)// && playerMovement.CanAttack())
             Attack();
 
         cooldownTimer += Time.deltaTime;
@@ -43,7 +43,7 @@ public class PlayerAttack : MonoBehaviour
         //pool gunshots
 
         gunshots[FindGunshot()].transform.position = shotPoint.position;
-        gunshots[FindGunshot()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
+        //gunshots[FindGunshot()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
     }
 
     private int FindGunshot()

@@ -26,30 +26,12 @@ public class GameOverScreen : MonoBehaviour
         pointsText.text = "Points: " + totalScore.ToString();
     }
 
-    public void PauseScreen()
-    {
-        Time.timeScale = 0f;
-        gameObject.SetActive(true);
-        
-    }
 
     public void GOSetup(int score)
     {
         pointsText.text = " ";
         gameObject.SetActive(true);
         endPointsText.text = totalScore + score + " POINTS";
-    }
-
-    public void ControlSetup()
-    {
-        gameObject.SetActive(true);
-        ControlsButton();
-    }
-
-    public void RestartButton()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Level1");
     }
 
     public void Resume()

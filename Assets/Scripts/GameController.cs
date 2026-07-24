@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    //public ControlScreen ControlScreen;
+    /*public ControlScreen ControlScreen;
     public GameOverScreen GameOverScreen;
     private int maxPlatform = 0;
     private int enemyBlasted = 0;
-
+    /
     public void GameOver()
     {
         GameOverScreen.GOSetup(maxPlatform + enemyBlasted);
@@ -20,5 +20,5 @@ public class GameController : MonoBehaviour
     {
         GameOverScreen.ControlSetup();
     }
-
+    */
 }
