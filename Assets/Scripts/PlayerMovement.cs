@@ -41,11 +41,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!UnityEngine.Application.isMobilePlatform) {
-           MobileInput(); 
-        } else
+        if (!UnityEngine.Application.isMobilePlatform)
         {
             InputHandle();
+        }
+        else
+        {
+            MobileInput();
         } 
         BulletRespawn();
     }
@@ -138,11 +140,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Safe")
+        Debug.Log($"Collision with: {collision.gameObject.name}, tag: {collision.gameObject.tag}");
+        Debug.Log(collision.GetContact(0).point);
+
+        if (collision.gameObject.CompareTag("Safe"))
         {
             gm.score += 10;
         }
-        if (collision.gameObject.tag == "Ground") 
+        if (collision.gameObject.CompareTag("Ground")) 
         { 
             grounded = true;
         } 
@@ -151,11 +156,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //Debug.Log(other);
         if (other.gameObject.CompareTag("Death") || other.gameObject.CompareTag("Enemy"))
         {
             gm.isGameover = true;
             this.gameObject.SetActive(false);
         }
+        Debug.Log($"Collision Trigger with: {other.gameObject.name}, tag: {other.gameObject.tag}");
+       // Debug.Log(other.GetContacts(0).point);
     }
     public bool CanAttack()
     {
@@ -164,9 +172,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void JumpButton()
     {
-        body.linearVelocity = new Vector2(body.linearVelocity.x, speed);
-        anim.SetTrigger("jump");
-        grounded = false;
+        if (grounded)
+        {
+            body.linearVelocity = new Vector2(body.linearVelocity.x, speed);
+            anim.SetTrigger("jump");
+            grounded = false;
+        }
     }
 
     public void ShootButton()

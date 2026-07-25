@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using NUnit.Framework;
 
 public class GM : MonoBehaviour
 {
@@ -11,13 +12,8 @@ public class GM : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI endScore;
     public int score;
-    public GameObject[] platforms;
-    public GameObject[] aliens;
-    public GameObject[] spikes;
     public GameObject[] mobileButtons;
     public bool canSpawnPlatform;
-    public bool alienSpawner;
-    public bool spikeSpawner;
     public bool isGameover;
     public bool isPaused;
 
@@ -29,11 +25,11 @@ public class GM : MonoBehaviour
             player = GameObject.FindGameObjectWithTag("Player");
             isPaused = false;
             pauseScreen.SetActive(false);
-            //if (!UnityEngine.Application.isMobilePlatform)
+            if (!UnityEngine.Application.isMobilePlatform)
             {
-                //for (int i = 0; i < mobileButtons.Length; i++)
+                for (int i = 0; i < mobileButtons.Length; i++)
                 {
-                    //mobileButtons[i].SetActive(false);
+                    mobileButtons[i].SetActive(false);
                 }
             }
         }
