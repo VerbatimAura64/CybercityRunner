@@ -176,7 +176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 259876eb069cade4a99b93fbb2d9f454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1.5
+  spawnPoint: {x: 0, y: 0, z: 0}
+  gm: {fileID: 0}
 --- !u!1 &6900187383130447619
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,5 +311,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.16, y: 0.7785789}
+  m_Size: {x: 0.02, y: 0.7785789}
   m_EdgeRadius: 0

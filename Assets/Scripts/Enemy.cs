@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private float speed;
-    private float direction;
+    [SerializeField] private Vector3 liveSpawn;
+    [SerializeField] private Vector3 spawnPoint;
+    [SerializeField] private Spawner spawner;
     private bool hit;
 
 
     private BoxCollider2D boxCollider;
     private Animator anim;
-    private float blasted;
 
 
     private void Awake()
@@ -21,46 +22,39 @@ public class Enemy : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
+    private void OnEnable()
+    {
+        hit = false;
+        anim.SetBool("hit", hit);
+        boxCollider.enabled = true;
+    }
+
     void Update()
     {
-        float movementSpeed = speed * Time.deltaTime * direction;
-        transform.Translate(movementSpeed, 0, 0);
+        float movementSpeed = speed * Time.deltaTime;
+        transform.Translate(-movementSpeed, 0, 0);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "Deleter")
+        if (hit) return;
+        if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Deleter") || collision.gameObject.CompareTag("Bullet"))
         {
-            blasted += Time.deltaTime;
-            hit = true;
-            anim.SetBool("hit", hit);
-            gameObject.GetComponent<BoxCollider2D>().enabled = false;
-            DestroyEnemy(.8f);
-            //gameObject.SetActive(false);
-            
-            
-            
+            StartCoroutine(DestroyEnemy());
         }
      }
 
-    public void SetDirection(float _direction)
+    private IEnumerator DestroyEnemy()
     {
-        direction = _direction;
-        gameObject.SetActive(true);
-        hit = false;
-        boxCollider.enabled = true;
+        hit = true;
+        anim.SetBool("hit", hit);
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        yield return new WaitForSeconds(3);
+        gameObject.SetActive(false);
+        //boxCollider.enabled = true;
+        //this.gameObject.transform.position = spawnPoint;
+        //yield return null;
 
-        float localScaleX = transform.localScale.x;
-        if (Mathf.Sign(localScaleX) != _direction)
-            localScaleX = -localScaleX;
-
-        transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
+        //Destroy(gameObject, delay);
     }
-
-    private void DestroyEnemy(float delay)
-    {
-        
-        Destroy(gameObject, delay);
-    }
-
 
 }

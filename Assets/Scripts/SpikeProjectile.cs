@@ -7,6 +7,9 @@ public class SpikeProjectile : MonoBehaviour
     [SerializeField] private float speed;
     private float direction;
     private bool hit;
+    public Vector3 spawnPoint;
+    private Spawner spawner;
+    public GM gm;
 
     private BoxCollider2D boxCollider;
     private Animator anim;
@@ -15,53 +18,44 @@ public class SpikeProjectile : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        
+    }
+
+    private void Start()
+    {
+        gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GM>();
+        spawner = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Spawner>();
+        //liveSpawn = spawner.spikeSpawnpoint.transform.position;
+        //spawnPoint = new Vector3(spawner.spikeLiveSpawn.x, 
+                             //   spawner.spikeOrigin.y, 
+                           //     spawner.spikeLiveSpawn.z);
+        //this.gameObject.transform.position = spawnPoint;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //spawnPoint = gm.spawner1;//new Vector3(spawner.spikeLiveSpawn.x,
+        //                        spawner.spikeOrigin.y,
+        //                        spawner.spikeLiveSpawn.z);
         if (hit) return;
-        float movementSpeed = speed * Time.deltaTime * direction;
-        transform.Translate(movementSpeed, 0, 0);
+        float movementSpeed = speed * Time.deltaTime;
+        transform.Translate(-movementSpeed, 0, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if(collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Deleter")
+        if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Deleter"))
         {
-            Destroy(gameObject);
-        }
-        /*else if (collision.gameObject.tag != "Bullet"
-            && collision.gameObject.tag != "Player" 
-            && collision.gameObject.tag != "Ground" 
-            && collision.gameObject.tag != "Safe"
-            && collision.gameObject.tag != "Spawner"
-            && collision.gameObject.tag != "Enemy")
-        {
-            hit = true;
-            boxCollider.enabled = false;
-            Debug.Log(collision.gameObject.tag + ", " + collision.gameObject.name); 
             Deactivate();
-        }*/
-    }
-
-    public void SetDirection(float _direction)
-    {
-        direction = _direction;
-        gameObject.SetActive(true);
-        hit = false;
-        boxCollider.enabled = true;
-
-        float localScaleX = transform.localScale.x;
-        if (Mathf.Sign(localScaleX) != _direction)
-            localScaleX = -localScaleX;
-
-        transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
+            //Destroy(gameObject);
+        }
     }
 
     private void Deactivate()
     {
         gameObject.SetActive(false);
+        //this.gameObject.transform.position = spawnPoint;
     }
 }

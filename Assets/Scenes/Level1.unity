@@ -1424,7 +1424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FollowSpeed: 4
   yOffset: 0.3
-  xOffset: 1
+  xOffset: 1.5
   target: {fileID: 713199663}
 --- !u!20 &519420031
 Camera:
@@ -1516,22 +1516,34 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 928755c4de98a7f449266e75140e7c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alienSpawnpoint: {fileID: 0}
-  spikeSpawnpoint: {fileID: 0}
+  spikeOrigin: {x: 0, y: 0, z: 0}
+  spikeLiveSpawn: {x: 0, y: 0, z: 0}
+  spikePoint: {x: 0, y: 0, z: 0}
+  alienSpawner: {fileID: 1516946971291388056}
+  spikeSpawner: {fileID: 1002899625725335443}
+  alienOrigin: {x: 0, y: 0, z: 0}
+  alienLiveSpawn: {x: 0, y: 0, z: 0}
+  alienPoint: {x: 0, y: 0, z: 0}
   lastXpos: {x: 0, y: 0, z: 0}
-  alienPrefab: {fileID: 0}
-  spikePrefab: {fileID: 0}
-  platformPrefab: {fileID: 0}
+  alienPrefab: {fileID: 7286816127927393574, guid: 0ee219ef8e165d043800b6a536512d4f,
+    type: 3}
+  spikePrefab: {fileID: 4657747448550797812, guid: 112f86fbb97e0c74183a14f0568e701e,
+    type: 3}
+  platformPrefab: {fileID: 8674724848056288980, guid: 205ca5826cfdcde43a8e9f9e2e7f81e8,
+    type: 3}
   aliens: []
   spikes: []
   hazards: []
   platforms: []
   platCount: 0
+  hazCount: 12
+  timeUntilSpawn: 0
+  objSpawnTime: 0.75
   canSpawn: 0
   hazardSpawner: 1
   platformSpawner: 0
@@ -3704,6 +3716,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  spikeSpawner: {fileID: 0}
+  alienSpawner: {fileID: 0}
   pauseScreen: {fileID: 979296084}
   loseScreen: {fileID: 1124541379}
   controlScreen: {fileID: 0}
@@ -3827,8 +3841,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 928755c4de98a7f449266e75140e7c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alienSpawnpoint: {fileID: 0}
-  spikeSpawnpoint: {fileID: 0}
+  spikeOrigin: {x: 0, y: 0, z: 0}
+  spikeLiveSpawn: {x: 0, y: 0, z: 0}
+  spikePoint: {x: 0, y: 0, z: 0}
+  alienSpawner: {fileID: 0}
+  spikeSpawner: {fileID: 1002899625725335443}
+  alienOrigin: {x: 0, y: 0, z: 0}
+  alienLiveSpawn: {x: 0, y: 0, z: 0}
+  alienPoint: {x: 0, y: 0, z: 0}
   lastXpos: {x: 0, y: 0, z: 0}
   alienPrefab: {fileID: 0}
   spikePrefab: {fileID: 0}
@@ -3839,6 +3859,9 @@ MonoBehaviour:
   hazards: []
   platforms: []
   platCount: 4
+  hazCount: 12
+  timeUntilSpawn: 0
+  objSpawnTime: 0
   canSpawn: 0
   hazardSpawner: 0
   platformSpawner: 1
@@ -5460,6 +5483,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7241140645284684432, guid: 0ee219ef8e165d043800b6a536512d4f,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241140645284684432, guid: 0ee219ef8e165d043800b6a536512d4f,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241140645284684432, guid: 0ee219ef8e165d043800b6a536512d4f,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241140645284684432, guid: 0ee219ef8e165d043800b6a536512d4f,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.41
+      objectReference: {fileID: 0}
     - target: {fileID: 7286816127927393574, guid: 0ee219ef8e165d043800b6a536512d4f,
         type: 3}
       propertyPath: m_Name
@@ -6045,26 +6088,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 460509591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &784693188540695815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002899625725335443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62748b931d639924cbc6557e87055438, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  platforms: {fileID: 0}
-  spikes:
-  - {fileID: 4657747448550797812, guid: 112f86fbb97e0c74183a14f0568e701e, type: 3}
-  pforms: []
-  obstacleSpawnTime: 2
-  obstacleSpeed: 1.65
-  offset: 2.75
-  numOfSpike: 2
 --- !u!1 &1002899625725335443
 GameObject:
   m_ObjectHideFlags: 0
@@ -6074,7 +6097,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7211878178826501713}
-  - component: {fileID: 784693188540695815}
   - component: {fileID: 7482400790358589650}
   m_Layer: 0
   m_Name: Spike Spawner
@@ -6082,29 +6104,7 @@ GameObject:
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1266572658516910326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516946971291388056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62748b931d639924cbc6557e87055438, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  platforms: {fileID: 8674724848056288980, guid: 205ca5826cfdcde43a8e9f9e2e7f81e8,
-    type: 3}
-  spikes:
-  - {fileID: 7286816127927393574, guid: 0ee219ef8e165d043800b6a536512d4f, type: 3}
-  pforms:
-  - {fileID: 0}
-  obstacleSpawnTime: 1
-  obstacleSpeed: 1
-  offset: 2.75
-  numOfSpike: 2
+  m_IsActive: 1
 --- !u!1 &1516946971291388056
 GameObject:
   m_ObjectHideFlags: 0
@@ -6114,7 +6114,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6553222451533333339}
-  - component: {fileID: 1266572658516910326}
   - component: {fileID: 7125337380920812597}
   m_Layer: 0
   m_Name: Alien Spawner
@@ -6122,7 +6121,7 @@ GameObject:
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6553222451533333339
 Transform:
   m_ObjectHideFlags: 0
@@ -6132,7 +6131,7 @@ Transform:
   m_GameObject: {fileID: 1516946971291388056}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -0.30979705, z: 10.032258}
+  m_LocalPosition: {x: 4.88, y: -0.30979705, z: 10.032258}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6183,7 +6182,7 @@ Transform:
   m_GameObject: {fileID: 1002899625725335443}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -0.4127971, z: 10.032258}
+  m_LocalPosition: {x: 2.5, y: -0.48, z: 10.032258}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

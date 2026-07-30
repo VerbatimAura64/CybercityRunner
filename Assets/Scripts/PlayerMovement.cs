@@ -143,10 +143,7 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log($"Collision with: {collision.gameObject.name}, tag: {collision.gameObject.tag}");
         Debug.Log(collision.GetContact(0).point);
 
-        if (collision.gameObject.CompareTag("Safe"))
-        {
-            gm.score += 10;
-        }
+        
         if (collision.gameObject.CompareTag("Ground")) 
         { 
             grounded = true;
@@ -161,6 +158,10 @@ public class PlayerMovement : MonoBehaviour
         {
             gm.isGameover = true;
             this.gameObject.SetActive(false);
+        }
+        if (other.gameObject.CompareTag("Safe"))
+        {
+            gm.score += 10;
         }
         Debug.Log($"Collision Trigger with: {other.gameObject.name}, tag: {other.gameObject.tag}");
        // Debug.Log(other.GetContacts(0).point);

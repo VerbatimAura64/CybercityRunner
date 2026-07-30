@@ -6,6 +6,8 @@ using NUnit.Framework;
 public class GM : MonoBehaviour
 {
     public GameObject player;
+    public Spawner spikeSpawner;
+    public Spawner alienSpawner;
     public GameObject pauseScreen;
     public GameObject loseScreen;
     public GameObject controlScreen;
@@ -35,6 +37,11 @@ public class GM : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        //Get initial spawn
+        //spawner1 = GameObject.Find("Spike Spawner").GetComponent<Transform>().position;
+    }
     // Update is called once per frame
     void Update()
     {
