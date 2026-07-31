@@ -140,8 +140,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log($"Collision with: {collision.gameObject.name}, tag: {collision.gameObject.tag}");
-        Debug.Log(collision.GetContact(0).point);
+        //Debug.Log($"Collision with: {collision.gameObject.name}, tag: {collision.gameObject.tag}");
+        //Debug.Log(collision.GetContact(0).point);
 
         
         if (collision.gameObject.CompareTag("Ground")) 

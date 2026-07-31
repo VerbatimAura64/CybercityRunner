@@ -65,7 +65,7 @@ public class Spawner : MonoBehaviour
         }
         if (platformSpawner)
         {
-            lastXpos = new Vector3(-1, -1.5f, 0);
+            lastXpos = new Vector3(-1, -1.5f, 1);
             platforms = new List<GameObject>();
             for (int i = 0; i < platCount; i++)
             {
