@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     private bool canAttack;
     private float cooldownTimer = Mathf.Infinity;
     public AudioSource source;
+    public Vector3 initPos;
+    public int DistanceScore;
     //public GameOverScreen GameOverScreen;
     //public int score;
     //public Text pointsText;
@@ -50,6 +52,13 @@ public class PlayerMovement : MonoBehaviour
             MobileInput();
         } 
         BulletRespawn();
+        //CheckDistance();
+    }
+
+    void CheckDistance()
+    {
+        DistanceScore = Mathf.CeilToInt(transform.position.x - initPos.x);
+        gm.score += DistanceScore;
     }
 
     void InputHandle()

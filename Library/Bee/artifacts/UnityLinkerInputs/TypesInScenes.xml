@@ -1,18 +1,19 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="CameraController" preserve="nothing"/>
-		<type fullname="Deathbox" preserve="nothing"/>
-		<type fullname="Deleter" preserve="nothing"/>
 		<type fullname="Enemy" preserve="nothing"/>
-		<type fullname="GameOverScreen" preserve="nothing"/>
+		<type fullname="GM" preserve="nothing"/>
+		<type fullname="HoldButton" preserve="nothing"/>
+		<type fullname="ParallaxLayer" preserve="nothing"/>
 		<type fullname="Pickup" preserve="nothing"/>
 		<type fullname="PlatformGenerator" preserve="nothing"/>
-		<type fullname="PlayerAttack" preserve="nothing"/>
 		<type fullname="PlayerMovement" preserve="nothing"/>
 		<type fullname="Projectile" preserve="nothing"/>
+		<type fullname="Spawner" preserve="nothing"/>
 		<type fullname="SpikeProjectile" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro">
+		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>
 		<type fullname="TMPro.TMP_ColorGradient" preserve="nothing"/>
 		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
@@ -46,6 +47,7 @@
 		<type fullname="UnityEngine.CircleCollider2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Collider2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Component" preserve="nothing"/>
+		<type fullname="UnityEngine.CompositeCollider2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Font" preserve="nothing"/>
 		<type fullname="UnityEngine.GameObject" preserve="nothing"/>
 		<type fullname="UnityEngine.LightingSettings" preserve="nothing"/>

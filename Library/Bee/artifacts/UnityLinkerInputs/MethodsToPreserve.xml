@@ -1,8 +1,21 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
-		<type fullname="GameOverScreen">
-			<method name="QuitButton"/>
+		<type fullname="GM">
+			<method name="Controls"/>
+			<method name="Menu"/>
+			<method name="Menu"/>
+			<method name="QuitGame"/>
+			<method name="Restart"/>
+			<method name="Restart"/>
 			<method name="Resume"/>
+			<method name="Return"/>
+			<method name="StartGame"/>
+		</type>
+		<type fullname="PlayerMovement">
+			<method name="JumpButton"/>
+			<method name="MoveLeft"/>
+			<method name="MoveRight"/>
+			<method name="ShootButton"/>
 		</type>
 	</assembly>
 </linker>
