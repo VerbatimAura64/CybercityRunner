@@ -8,7 +8,8 @@ enjoy a smooth 60 FPS game that'll play infinitely.
 ## Play It
 Available on itch.io: https://harborviewgames.itch.io/cybercity-runner
 
-PC and mobile builds coming soon.
+Mobile Web Browser Live! 
+PC build coming soon.
 
 ## What I Built
 

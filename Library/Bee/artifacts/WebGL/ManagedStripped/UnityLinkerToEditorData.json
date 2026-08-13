@@ -794,6 +794,14 @@
             "icon": null
           },
           {
+            "name": "CompositeCollider2D",
+            "scenes": [
+              "Assets/Scenes/Level1.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Physics2DSettings",
             "scenes": [],
             "dependencyType": 1,

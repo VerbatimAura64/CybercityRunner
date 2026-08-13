@@ -5,6 +5,7 @@
 		<type fullname="GM" preserve="nothing"/>
 		<type fullname="HoldButton" preserve="nothing"/>
 		<type fullname="ParallaxLayer" preserve="nothing"/>
+		<type fullname="PerformanceOverlay" preserve="nothing"/>
 		<type fullname="Pickup" preserve="nothing"/>
 		<type fullname="PlatformGenerator" preserve="nothing"/>
 		<type fullname="PlayerMovement" preserve="nothing"/>

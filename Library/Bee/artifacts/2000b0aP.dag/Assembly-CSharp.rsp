@@ -323,6 +323,7 @@
 "Assets/Scripts/GM.cs"
 "Assets/Scripts/HoldButton.cs"
 "Assets/Scripts/ParallaxLayer.cs"
+"Assets/Scripts/PerformanceOverlay.cs"
 "Assets/Scripts/Pickup.cs"
 "Assets/Scripts/PlatformGenerator.cs"
 "Assets/Scripts/PlayerAttack.cs"

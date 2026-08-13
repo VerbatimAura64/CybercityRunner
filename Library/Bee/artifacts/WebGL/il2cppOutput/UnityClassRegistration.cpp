@@ -160,6 +160,7 @@ class Rigidbody; template <> void RegisterUnityClass<Rigidbody>(const char*);
 class BoxCollider2D; template <> void RegisterUnityClass<BoxCollider2D>(const char*);
 class CircleCollider2D; template <> void RegisterUnityClass<CircleCollider2D>(const char*);
 class Collider2D; template <> void RegisterUnityClass<Collider2D>(const char*);
+class CompositeCollider2D; template <> void RegisterUnityClass<CompositeCollider2D>(const char*);
 class Physics2DSettings; template <> void RegisterUnityClass<Physics2DSettings>(const char*);
 class Rigidbody2D; template <> void RegisterUnityClass<Rigidbody2D>(const char*);
 namespace TextRendering { class Font; } template <> void RegisterUnityClass<TextRendering::Font>(const char*);
@@ -174,7 +175,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 81 non stripped classes
+	//Total: 82 non stripped classes
 	//0. AnimationClip
 	RegisterUnityClass<AnimationClip>("Animation");
 	//1. Animator
@@ -319,23 +320,25 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<CircleCollider2D>("Physics2D");
 	//71. Collider2D
 	RegisterUnityClass<Collider2D>("Physics2D");
-	//72. Physics2DSettings
+	//72. CompositeCollider2D
+	RegisterUnityClass<CompositeCollider2D>("Physics2D");
+	//73. Physics2DSettings
 	RegisterUnityClass<Physics2DSettings>("Physics2D");
-	//73. Rigidbody2D
+	//74. Rigidbody2D
 	RegisterUnityClass<Rigidbody2D>("Physics2D");
-	//74. Font
+	//75. Font
 	RegisterUnityClass<TextRendering::Font>("TextRendering");
-	//75. TextMesh
+	//76. TextMesh
 	RegisterUnityClass<TextRenderingPrivate::TextMesh>("TextRendering");
-	//76. Canvas
+	//77. Canvas
 	RegisterUnityClass<UI::Canvas>("UI");
-	//77. CanvasGroup
+	//78. CanvasGroup
 	RegisterUnityClass<UI::CanvasGroup>("UI");
-	//78. CanvasRenderer
+	//79. CanvasRenderer
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
-	//79. UIRenderer
+	//80. UIRenderer
 	RegisterUnityClass<UIRenderer>("UIElements");
-	//80. UnityConnectSettings
+	//81. UnityConnectSettings
 	RegisterUnityClass<UnityConnectSettings>("UnityConnect");
 
 }

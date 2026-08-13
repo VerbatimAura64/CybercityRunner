@@ -3,24 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|c:\\users\\walonzo\\github\\cybercityrunner\\assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|C:\\Users\\walonzo\\GitHub\\CybercityRunner\\assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|C:\\Users\\walonzo\\GitHub\\CybercityRunner\\assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|C:\\Users\\walonzo\\GitHub\\CybercityRunner\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|c:\\users\\walonzo\\github\\cybercityrunner\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|c:\\users\\walonzo\\github\\cybercityrunner\\assets\\scripts\\spikeprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spikeprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\walonzo\\GitHub\\KenneyJam\\Assets\\Scripts\\CollectableObj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|C:\\Users\\walonzo\\GitHub\\CybercityRunner\\assets\\scripts\\gm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|C:\\Users\\walonzo\\GitHub\\CybercityRunner\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|C:\\Users\\walonzo\\GitHub\\CybercityRunner\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|C:\\Users\\walonzo\\GitHub\\CybercityRunner\\assets\\scripts\\spikeprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spikeprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|C:\\Users\\walonzo\\GitHub\\CybercityRunner\\assets\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +40,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|C:\\Users\\walonzo\\GitHub\\CybercityRunner\\assets\\scripts\\deleter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\deleter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|C:\\Users\\walonzo\\GitHub\\CybercityRunner\\assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{102A0B82-540E-D963-0B81-FED5EA0DD7AC}|Assembly-CSharp.csproj|C:\\Users\\walonzo\\GitHub\\CybercityRunner\\assets\\scripts\\generator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,24 +69,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "CollectableObj.cs",
+              "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\KenneyJam\\Assets\\Scripts\\CollectableObj.cs",
+              "RelativeDocumentMoniker": "..\\KenneyJam\\Assets\\Scripts\\CollectableObj.cs",
+              "ToolTip": "C:\\Users\\walonzo\\GitHub\\KenneyJam\\Assets\\Scripts\\CollectableObj.cs",
+              "RelativeToolTip": "..\\KenneyJam\\Assets\\Scripts\\CollectableObj.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-01T07:21:43.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Spawner.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\Spawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spawner.cs",
               "ToolTip": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\Spawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\Spawner.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAmwH0AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAABAy8zMzIwtwEMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-30T01:32:46.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
@@ -91,12 +106,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T23:47:53.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-28T23:47:53.144Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "SpikeProjectile.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\SpikeProjectile.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpikeProjectile.cs",
@@ -104,24 +118,24 @@
               "RelativeToolTip": "Assets\\Scripts\\SpikeProjectile.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwDAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T23:46:33.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-28T23:46:33.583Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "CameraController.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\CameraController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraController.cs",
               "ToolTip": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\CameraController.cs",
               "RelativeToolTip": "Assets\\Scripts\\CameraController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAACAZmZmZuYawBoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T21:10:27.808Z"
+              "WhenOpened": "2026-07-24T21:10:27.808Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "PlatformGenerator.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\PlatformGenerator.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlatformGenerator.cs",
@@ -133,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Deleter.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\Deleter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Deleter.cs",
@@ -145,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Generator.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\Generator.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Generator.cs",
@@ -157,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "HoldButton.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\HoldButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HoldButton.cs",
@@ -169,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Dropdown.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Library\\PackageCache\\com.unity.ugui@24b10291b18f\\Runtime\\UGUI\\UI\\Core\\Dropdown.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@24b10291b18f\\Runtime\\UGUI\\UI\\Core\\Dropdown.cs",
@@ -181,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Projectile.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\Projectile.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Projectile.cs",
@@ -193,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "PlayerAttack.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerAttack.cs",
@@ -205,32 +219,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GM.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\GM.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GM.cs",
               "ToolTip": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\GM.cs",
               "RelativeToolTip": "Assets\\Scripts\\GM.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBEAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T04:18:14.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-23T04:18:14.085Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
               "ToolTip": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAuwKEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAxwDIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T06:58:53.053Z"
+              "WhenOpened": "2026-07-22T06:58:53.053Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Deathbox.cs",
               "DocumentMoniker": "C:\\Users\\walonzo\\GitHub\\CybercityRunner\\Assets\\Scripts\\Deathbox.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Deathbox.cs",

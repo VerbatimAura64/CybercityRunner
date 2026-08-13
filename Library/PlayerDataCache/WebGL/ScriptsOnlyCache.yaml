@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - GM
     - HoldButton
     - ParallaxLayer
+    - PerformanceOverlay
     - Pickup
     - PlatformGenerator
     - PlayerMovement
@@ -92,19 +93,25 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: GM
-    methodName: Controls
-  - assembly: Assembly-CSharp
-    fullTypeName: GM
-    methodName: StartGame
-  - assembly: Assembly-CSharp
-    fullTypeName: GM
     methodName: Return
   - assembly: Assembly-CSharp
     fullTypeName: GM
     methodName: QuitGame
   - assembly: Assembly-CSharp
+    fullTypeName: GM
+    methodName: Controls
+  - assembly: Assembly-CSharp
+    fullTypeName: GM
+    methodName: StartGame
+  - assembly: Assembly-CSharp
     fullTypeName: PlayerMovement
     methodName: JumpButton
+  - assembly: Assembly-CSharp
+    fullTypeName: GM
+    methodName: Menu
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerMovement
+    methodName: ShootButton
   - assembly: Assembly-CSharp
     fullTypeName: GM
     methodName: Resume
@@ -112,20 +119,14 @@ ScriptsOnlyBuild:
     fullTypeName: GM
     methodName: Menu
   - assembly: Assembly-CSharp
-    fullTypeName: GM
-    methodName: Menu
-  - assembly: Assembly-CSharp
-    fullTypeName: GM
-    methodName: Restart
-  - assembly: Assembly-CSharp
-    fullTypeName: PlayerMovement
-    methodName: ShootButton
-  - assembly: Assembly-CSharp
     fullTypeName: PlayerMovement
     methodName: MoveLeft
   - assembly: Assembly-CSharp
     fullTypeName: PlayerMovement
     methodName: MoveRight
+  - assembly: Assembly-CSharp
+    fullTypeName: GM
+    methodName: Restart
   - assembly: Assembly-CSharp
     fullTypeName: GM
     methodName: Restart
@@ -166,45 +167,47 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 23614}
+      Script: {instanceID: 23616}
     - Class: 114
-      Script: {instanceID: 23826}
+      Script: {instanceID: 23828}
     - Class: 114
-      Script: {instanceID: 24022}
+      Script: {instanceID: 24024}
     - Class: 114
-      Script: {instanceID: 24956}
+      Script: {instanceID: 24958}
     - Class: 114
-      Script: {instanceID: 25352}
+      Script: {instanceID: 25354}
     - Class: 114
-      Script: {instanceID: 25438}
+      Script: {instanceID: 25440}
     - Class: 114
-      Script: {instanceID: 25540}
+      Script: {instanceID: 25542}
     - Class: 114
-      Script: {instanceID: 25688}
+      Script: {instanceID: 25690}
     - Class: 114
-      Script: {instanceID: 25746}
+      Script: {instanceID: 25748}
     - Class: 114
-      Script: {instanceID: 25838}
+      Script: {instanceID: 25840}
     - Class: 114
-      Script: {instanceID: 25882}
+      Script: {instanceID: 25884}
     - Class: 114
-      Script: {instanceID: 26970}
+      Script: {instanceID: 26972}
     - Class: 114
-      Script: {instanceID: 27246}
+      Script: {instanceID: 27248}
     - Class: 114
-      Script: {instanceID: 27306}
+      Script: {instanceID: 27308}
     - Class: 114
-      Script: {instanceID: 27732}
+      Script: {instanceID: 27434}
     - Class: 114
-      Script: {instanceID: 28168}
+      Script: {instanceID: 27736}
     - Class: 114
-      Script: {instanceID: 28402}
+      Script: {instanceID: 28172}
     - Class: 114
-      Script: {instanceID: 28842}
+      Script: {instanceID: 28406}
     - Class: 114
-      Script: {instanceID: 29026}
+      Script: {instanceID: 28846}
     - Class: 114
-      Script: {instanceID: 41680}
+      Script: {instanceID: 29030}
+    - Class: 114
+      Script: {instanceID: 31488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -245,31 +248,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 24022}
+      Script: {instanceID: 23828}
     - Class: 114
-      Script: {instanceID: 24428}
+      Script: {instanceID: 24024}
     - Class: 114
-      Script: {instanceID: 24956}
+      Script: {instanceID: 24430}
     - Class: 114
-      Script: {instanceID: 25352}
+      Script: {instanceID: 24958}
     - Class: 114
-      Script: {instanceID: 25540}
+      Script: {instanceID: 25354}
     - Class: 114
-      Script: {instanceID: 25746}
+      Script: {instanceID: 25542}
     - Class: 114
-      Script: {instanceID: 26970}
+      Script: {instanceID: 25748}
     - Class: 114
-      Script: {instanceID: 27306}
+      Script: {instanceID: 26972}
     - Class: 114
-      Script: {instanceID: 27526}
+      Script: {instanceID: 27308}
     - Class: 114
-      Script: {instanceID: 27624}
+      Script: {instanceID: 27530}
     - Class: 114
-      Script: {instanceID: 27732}
+      Script: {instanceID: 27628}
     - Class: 114
-      Script: {instanceID: 28360}
+      Script: {instanceID: 27736}
     - Class: 114
-      Script: {instanceID: 28402}
+      Script: {instanceID: 28364}
+    - Class: 114
+      Script: {instanceID: 28406}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -579,7 +584,7 @@ ScriptsOnlyBuild:
     className: Deleter
   - hash:
       serializedVersion: 2
-      Hash: f1d4d98ba02b22eb1aab248f00e043d6
+      Hash: 585babf7b43100ff7bc94beb33c54f3c
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CameraController
@@ -831,6 +836,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 3a7949a0b59d730131d1121b1bd42437
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ParallaxLayer
+  - hash:
+      serializedVersion: 2
       Hash: 11a492830b189fafb9ed2f7afa464c56
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
@@ -933,7 +944,7 @@ ScriptsOnlyBuild:
     className: TMP_ExampleScript_01
   - hash:
       serializedVersion: 2
-      Hash: 5941ec1e3c140325294c356afbde7197
+      Hash: ce5faf74a306c131b3efa37902e0a44f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerMovement
@@ -1131,12 +1142,12 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 3a7949a0b59d730131d1121b1bd42437
+      Hash: 4bd92e6ea1f18d7dffc241256d01d3f6
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: ParallaxLayer
+    className: PerformanceOverlay
   platform: 20
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Level1.unity
-  playerPath: C:/Users/walonzo/GitHub/WebBuilds
+  playerPath: C:/Users/walonzo/GitHub/WebBuilds/Unknown

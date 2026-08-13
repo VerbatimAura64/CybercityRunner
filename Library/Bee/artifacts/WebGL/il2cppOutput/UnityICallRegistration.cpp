@@ -414,6 +414,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Application_get_isFocused();
 		Register_UnityEngine_Application_get_isFocused();
 
+		//System.Boolean UnityEngine.Application::get_isMobilePlatform()
+		void Register_UnityEngine_Application_get_isMobilePlatform();
+		Register_UnityEngine_Application_get_isMobilePlatform();
+
 		//System.Boolean UnityEngine.Application::get_isPlaying()
 		void Register_UnityEngine_Application_get_isPlaying();
 		Register_UnityEngine_Application_get_isPlaying();
@@ -1229,6 +1233,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Int32 UnityEngine.GameObject::get_layer_Injected(System.IntPtr)
 		void Register_UnityEngine_GameObject_get_layer_Injected();
 		Register_UnityEngine_GameObject_get_layer_Injected();
+
+		//System.IntPtr UnityEngine.GameObject::FindGameObjectWithTag_Injected(UnityEngine.Bindings.ManagedSpanWrapper&)
+		void Register_UnityEngine_GameObject_FindGameObjectWithTag_Injected();
+		Register_UnityEngine_GameObject_FindGameObjectWithTag_Injected();
 
 		//System.IntPtr UnityEngine.GameObject::GetComponentInChildren_Injected(System.IntPtr,System.Type,System.Boolean)
 		void Register_UnityEngine_GameObject_GetComponentInChildren_Injected();
@@ -2790,6 +2798,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Renderer_SetMaterial_Injected();
 		Register_UnityEngine_Renderer_SetMaterial_Injected();
 
+		//System.Void UnityEngine.Renderer::get_bounds_Injected(System.IntPtr,UnityEngine.Bounds&)
+		void Register_UnityEngine_Renderer_get_bounds_Injected();
+		Register_UnityEngine_Renderer_get_bounds_Injected();
+
 		//System.Void UnityEngine.Renderer::set_enabled_Injected(System.IntPtr,System.Boolean)
 		void Register_UnityEngine_Renderer_set_enabled_Injected();
 		Register_UnityEngine_Renderer_set_enabled_Injected();
@@ -2972,11 +2984,23 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Rigidbody2D
 
+	//Start Registrations for type : UnityEngine.SceneManagement.Scene
+
+		//System.Int32 UnityEngine.SceneManagement.Scene::GetBuildIndexInternal(System.Int32)
+		void Register_UnityEngine_SceneManagement_Scene_GetBuildIndexInternal();
+		Register_UnityEngine_SceneManagement_Scene_GetBuildIndexInternal();
+
+	//End Registrations for type : UnityEngine.SceneManagement.Scene
+
 	//Start Registrations for type : UnityEngine.SceneManagement.SceneManager
 
 		//System.Int32 UnityEngine.SceneManagement.SceneManager::get_sceneCount()
 		void Register_UnityEngine_SceneManagement_SceneManager_get_sceneCount();
 		Register_UnityEngine_SceneManagement_SceneManager_get_sceneCount();
+
+		//System.Void UnityEngine.SceneManagement.SceneManager::GetActiveScene_Injected(UnityEngine.SceneManagement.Scene&)
+		void Register_UnityEngine_SceneManagement_SceneManager_GetActiveScene_Injected();
+		Register_UnityEngine_SceneManagement_SceneManager_GetActiveScene_Injected();
 
 		//System.Void UnityEngine.SceneManagement.SceneManager::GetSceneAt_Injected(System.Int32,UnityEngine.SceneManagement.Scene&)
 		void Register_UnityEngine_SceneManagement_SceneManager_GetSceneAt_Injected();

@@ -15,12 +15,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float shotDistance;
     public HoldButton leftButton;
     public HoldButton rightButton;
-    [SerializeField]private float horizontalInput;
+    public float horizontalInput;
     private Rigidbody2D body;
     private Animator anim;
     private bool grounded;
     private bool canAttack;
-    private float cooldownTimer = Mathf.Infinity;
+    [SerializeField]private float cooldownTimer = Mathf.Infinity;
     public AudioSource source;
     public Vector3 initPos;
     public int DistanceScore;
@@ -36,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         source = GetComponent<AudioSource>();
         gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GM>();
+        grounded = true;
     }
     // Start is called before the first frame update
 
@@ -47,8 +48,9 @@ public class PlayerMovement : MonoBehaviour
         {
             InputHandle();
         }
-        else
+        else 
         {
+            
             MobileInput();
         } 
         BulletRespawn();
@@ -76,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
     void MobileInput()
     {
         ButtonMove();
+        //ShootButton();
     }
     void Pause()
     {
@@ -192,10 +195,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void ShootButton()
     {
-        if (cooldownTimer > attackCooldown && CanAttack())
+        if (CanAttack())
         {
             cooldownTimer = 0;
-
 
             for (int i = 0; i < gunshots.Length; i++)
             {
@@ -216,12 +218,20 @@ public class PlayerMovement : MonoBehaviour
     {
         if (leftButton.IsHeld || rightButton.IsHeld)
         {
-            if (leftButton.IsHeld) MoveLeft();
-            if (rightButton.IsHeld) MoveRight();
-        } else
-        {
-            horizontalInput = 0f;
-        }
+            if (leftButton.IsHeld) 
+                MoveLeft();
+            else
+            {
+                //horizontalInput = 0f;
+            }
+            if (rightButton.IsHeld) 
+                MoveRight();
+            else
+            {
+                //horizontalInput = 0f;
+            }
+        } 
+        
     
     }
 
@@ -235,7 +245,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (horizontalInput >= -1)
             {
-                horizontalInput += -.1f;
+                horizontalInput += -.2f;
             }
 
         } else
@@ -247,10 +257,11 @@ public class PlayerMovement : MonoBehaviour
             body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocity.y);
             if (horizontalInput < -0.01f)
                 transform.localScale = new Vector3(-1, 1, 1);
-
-            
+        } else
+        {
+            body.linearVelocity = new Vector2(0, body.linearVelocity.y);
         }
-        anim.SetBool("run", horizontalInput != 0);
+            anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", grounded);
     }
 
@@ -262,7 +273,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if(horizontalInput <= 1)
             {
-                horizontalInput += .1f;
+                horizontalInput += .2f;
             }
             
         }
@@ -276,11 +287,11 @@ public class PlayerMovement : MonoBehaviour
             body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocity.y);
 
             if (horizontalInput > 0.01f)
-                transform.localScale = Vector3.one;
-
-
-
-            
+                transform.localScale = Vector3.one;            
+        }
+        else
+        {
+            body.linearVelocity = new Vector2(0, body.linearVelocity.y);
         }
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", grounded);
