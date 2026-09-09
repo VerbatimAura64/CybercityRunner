@@ -40,4 +40,4 @@ further developing games.
 
 ## Case Study
 Full breakdown of the technical decisions and retrospective:
-https://verbatimaura64.github.io/cybercity-runner.html
+https://verbatimaura64.github.io/case_study/cybercity-runner.html
